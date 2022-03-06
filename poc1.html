@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POC - 1</title>
+
+<h2>Novell Services Login</h2>
+<body>
+<form>
+  <div>
+    <fieldset> 
+        <legend>Profile:</legend>  
+        <div>
+        <label for="usern">Username:</label>
+        <input type="email" id="usern" placeholder="eg. abc123@gmail.com">
+        </div> 
+        <br>
+        <div>
+        <label for="lname" >Password:<span></label>
+        <input type="password" id="lname" placeholder="enter password">
+        </div>
+        <br>
+        <div>
+        <label for="dateofbirth" >Date of birth:</label>
+        <input type="date" id="dob" name="dateofbirth"> 
+        </div>
+        <br>
+        <div>
+            <label for="gender" >Gender:</label>
+            <select name="gender" id="gender">
+            <option value = "default" selected> Select your gender </option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>    
+        </div>
+    </fieldset>  
+  <br>
+    <fieldset> 
+        <legend >Please specify your role:</legend>
+        <input type="radio" id="admin" name="role" value="Admin">
+        <label for="role">Admin</label><br>
+        <input type="radio" id="engineer" name="role" value="Engineer">
+        <label for="role">Engineer</label><br>
+        <input type="radio" id="manager" name="role" value="Manager">
+        <label for="role">Manager</label><br>
+        <input type="radio" id="guest" name="role" value="Guest">  
+        <label for="role">Guest</label><br>          
+    </fieldset>
+    <br>
+    <fieldset> 
+        <legend >Single Sign-on to the following:</legend>
+        <input type="checkbox" id="mail" name="sof" value="Mail">
+        <label for="sof">Mail</label><br>
+        <input type="checkbox" id="payroll" name="sof" value="Payroll">
+        <label for="sof">Payroll</label><br>
+        <input type="checkbox" id="self-service" name="sof" value="Self-service"> 
+        <label for="sof">Self-service</label><br> 
+    </fieldset>
+    <br>
+    <input type="submit" value="Submit Now!">
+    <input type="reset">
+</form>   
+</body>
+</head>
+</html>
